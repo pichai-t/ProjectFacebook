@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel tests" parallel="tests" thread-count="4" >
+
+    <test name="Set One">
+        <parameter name="My Test" value="Test One"/>
+        <classes>
+            <class name="runner.Runner" />
+        </classes>
+    </test>
+
+    <!--
+
+    <test name="Set Two">-->
+        <!--<parameter name="test-name" value="Test Two"/>-->
+        <!--<classes>-->
+            <!--<class name="runner.Runner2" />-->
+        <!--</classes>
+    </test>
+
+    -->
+
+    <!-- More test can be added by using <test> ... </test> Please check 'thread-count' as well -->
+
+</suite>
